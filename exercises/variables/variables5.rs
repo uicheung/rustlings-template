@@ -10,8 +10,7 @@ fn main() {
     println!("Spell a Number : {}", number);
     let number = match number {
         "T-H-R-E-E" =>3,
-        _=>{
-
+        _=>{ // _代表一个通配符模式，可以匹配所有剩下的情况 , 这里不能使用None ,因为None是Option 类型
             5
         }
     }; // don't rename this variable
